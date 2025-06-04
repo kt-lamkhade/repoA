@@ -19,7 +19,7 @@ jobs:
 
     - name: Set output
       id: set_output
-      run: echo "workflow_b_input=Hello from Workflow A" >> $GITHUB_ENV
+      run: echo "workflow_b_input=Hello from Workflow A..." >> $GITHUB_ENV
 
     - name: Trigger Workflow B
       uses: peter-evans/repository-dispatch@v2
