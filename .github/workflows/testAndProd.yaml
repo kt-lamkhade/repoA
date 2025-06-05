@@ -15,7 +15,7 @@ jobs:
         run: echo "Running tests..."
 
       - name: Deploy to Test
-        run: echo "Deploying to Test Environment...."
+        run: echo "Deploying to Test Environment....."
 
   ApproveProduction:
     name: Approval for Production Deployment
