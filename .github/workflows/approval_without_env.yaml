@@ -1,4 +1,4 @@
-name: CI + CD
+name: approval_without_env
 
 on:
   push:
