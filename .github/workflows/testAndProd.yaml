@@ -24,9 +24,9 @@ jobs:
     needs: [Test]
     steps:
       - name: Request approval
-        run: echo "Requesting approval for production deployment.."
+        run: echo "Requesting approval for production deployment..."
       - name: Approval
-        if: ${{ github.event.inputs.approved == 'true' }}
+        if: ${{ github.event.inputs.approved == 'true' }} && github.event.ref == 'refs/heads/main'
         run: echo "Approved for production deployment."
 
   DeployProd:
